@@ -2,7 +2,6 @@ function abre_calculadora() {
     console.log("Hola calculadora de mario y monica ");
 
 try {
-    
 /*-----------------------------------------------------------------*/
 /* Creamos div de fondo de la calculadora e insertamos en el DOM   */
 /*-----------------------------------------------------------------*/
@@ -39,23 +38,18 @@ digitos.className = 'teclado';
 digitos.setAttribute('style','position: absolute;top: 3%;left: 1.4%;width: 95%;height: 85%;align-items: right;background-color: grey;border-radius: 10px;');
 display.appendChild(digitos);//este inserta el display en el body del HTML 
 console.log("El digito esta cargado en el DOM " + digitos.isConnected); // retorna el estado del display en el DOM
-
-
-
-
-
-
-
-
+/*-----------------------------------------------------------------*/
+/* Creamos tecla borrar del teclado e insertamos en el DOM */
+/*-----------------------------------------------------------------*/
+const borra = document.createElement('button');
+borra.id = 'digitos';
+borra.className = 'teclado';
+borra.setAttribute('style','position: absolute;top: 3%;left: 1.4%;width: 25%;height: 20%;align-items: right;background-color: grey;border-radius: 10px;');
+teclado.appendChild(borra);//este inserta el display en el body del HTML 
+console.log("El digito esta cargado en el DOM " + digitos.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
 } catch (error) {
     alert("Error al cargar la calculadora " + error);
     
 }
-}
-
-
-
-// teclas de una calculadora
-function tecla_clicada(tecla) {
-        console.log(tecla);
 }
