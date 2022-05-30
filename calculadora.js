@@ -54,18 +54,23 @@ digitos.setAttribute('style','position: absolute;top: 3%;left: 1.4%;width: 95%;h
 display.appendChild(digitos);//este inserta el display en el body del HTML 
 console.log("El digito esta cargado en el DOM " + digitos.isConnected); // retorna el estado del display en el DOM
 /*-----------------------------------------------------------------*/
-/* Creamos tecla borrar del teclado e insertamos en el DOM */
+/* Creamos tecla digito1 del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
-const borra = document.createElement('button');
-borra.id = 'digitos';
-borra.className = 'teclado';
+const digito1 = document.createElement('button');
+digito1.id = 'digitos';
+digito1.className = 'teclado';
 let parametros5 =
-borra.setAttribute('style','position: absolute;top: 3%;left: 1.4%;width: 25%;height: 20%;align-items: right;background-color: grey;border-radius: 10px;');
-teclado.appendChild(borra);//este inserta el display en el body del HTML 
-console.log("La tecla CLEAR esta cargado en el DOM " + borra.isConnected); // retorna el estado del display en el DOM
+digito1.setAttribute('style','position: absolute;top: 3%;left: 1.4%;width: 25%;height: 20%;align-items: right;background-color: grey;border-radius: 10px;');
+teclado.appendChild(digito1);//este inserta el display en el body del HTML 
+console.log("La tecla digito1 esta cargada en el DOM " + digito1.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+
+
+
 /*-----------------------------------------------------------------*/
 } catch (error) {
     alert("Error al cargar la calculadora " + error);
     
 }
 }
+
