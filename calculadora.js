@@ -62,7 +62,7 @@ borra.className = 'teclado';
 let parametros5 =
 borra.setAttribute('style','position: absolute;top: 3%;left: 1.4%;width: 25%;height: 20%;align-items: right;background-color: grey;border-radius: 10px;');
 teclado.appendChild(borra);//este inserta el display en el body del HTML 
-console.log("El digito esta cargado en el DOM " + digitos.isConnected); // retorna el estado del display en el DOM
+console.log("La tecla CLEAR esta cargado en el DOM " + borra.isConnected); // retorna el estado del display en el DOM
 /*-----------------------------------------------------------------*/
 } catch (error) {
     alert("Error al cargar la calculadora " + error);
