@@ -479,7 +479,7 @@ let parametrosrestalabel =
     "height: 100%;"+
     "user-select: none;"+
     "align-items: center;"+
-    "font-size: 40px;"+
+    "font-size: 60px;"+
     "text-align: center;"+
     "line-height: 50px;"+
     "font-weight: bold;"+
@@ -553,7 +553,7 @@ let parametrosdivide =
 divide.setAttribute('style',parametrosdivide);//carga los estilos del boton
 //suma.innerHTML = '+';//carga el texto del boton
 divide.onclick = function() {
-    digitos.value += '/';
+    digitos.value += '÷';
 }
 teclado.appendChild(divide);//este inserta el display en el body del HTML 
 console.log("La tecla division esta cargada en el DOM " + divide.isConnected); // retorna el estado del display en el DOM
@@ -571,12 +571,12 @@ let parametrosdividelabel =
     "align-items: center;"+
     "font-size: 50px;"+
     "text-align: center;"+
-    "line-height: 60px;"+
+    "line-height: 55px;"+
     "font-weight: bold;"+
     "justify-content: center;"+
     "background-color: transparent;";
 divide1.setAttribute('style',parametrosdividelabel);//carga los estilos del label
-divide1.innerHTML = "/";
+divide1.innerHTML = "÷";
 divide.appendChild(divide1);//este inserta el display en el body del HTML 
 console.log("el label division esta cargada en el DOM " + divide1.isConnected); // retorna el estado del display en el DOM
 /*-----------------------------------------------------------------*/
