@@ -38,6 +38,17 @@ let parametros2 =
 "background-color: orangered;"+
 "border-radius: 10px;"+
 "border: 2px solid black;";
+
+
+
+
+
+
+
+
+
+
+
 display.setAttribute('style',parametros2);
 fondo.appendChild(display);//este inserta el display en el body del HTML 
 console.log("El display esta cargado en el DOM " + display.isConnected); // retorna el estado del display en el DOM
@@ -82,8 +93,8 @@ console.log("El digito esta cargado en el DOM " + digitos.isConnected); // retor
 /* Creamos tecla digito1 del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
 const digito1 = document.createElement('button');
-digito1.id = 'digitos';
-digito1.className = 'teclado';
+digito1.id = 'digito1';
+digito1.className = 'botones';
 let parametros5 =
 "position: absolute;"+
 "top: 1%;"+
@@ -95,7 +106,16 @@ let parametros5 =
 "box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;"+
 "border-radius: 32px;";
 digito1.setAttribute('style',parametros5);//carga los estilos del boton
-digito1.addEventListener('click', boton_click);//carga el evento del boton
+digito1.innerHTML = '1';//carga el texto del boton
+digito1.onclick = function() {
+    digitos.value += '1';
+}
+
+
+
+
+
+
 teclado.appendChild(digito1);//este inserta el display en el body del HTML 
 console.log("La tecla digito1 esta cargada en el DOM " + digito1.isConnected); // retorna el estado del display en el DOM
 /*-----------------------------------------------------------------*/
@@ -128,6 +148,6 @@ console.log("La tecla label1 esta cargada en el DOM " + label1.isConnected); // 
 }
 }
 
-function boton_click() {
-    console.log("Hola soy el boton ");
+function add_number(numero) {
+    console.log("Hola soy el boton "+ numero);
 }
