@@ -74,7 +74,12 @@ let parametros4 =
     "left: 1.4%;"+
     "width: 95%;"+
     "height: 85%;"+
+    "user-select: none;"+
     "align-items: right;"+
+    "font-size: 40px;"+
+    "text-align: right;"+
+    "line-height: 75px;"+
+    "font-weight: bold;"+
     "background-color: grey;"+
     "border-radius: 10px;";
 digitos.setAttribute('style',parametros4);
