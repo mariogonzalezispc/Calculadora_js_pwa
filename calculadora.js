@@ -100,7 +100,7 @@ let parametros5 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito1.setAttribute('style',parametros5);//carga los estilos del boton
-digito1.innerHTML = '1';//carga el texto del boton
+//digito1.innerHTML = '1';//carga el texto del boton
 digito1.onclick = function() {
     digitos.value += '1';
 }
@@ -184,7 +184,7 @@ let parametrosclear =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 clear.setAttribute('style',parametrosclear);//carga los estilos del boton
-clear.innerHTML = '';//carga el texto del boton
+//clear.innerHTML = '';//carga el texto del boton
 clear.onclick = function() {
     digitos.value = '';
 }
@@ -212,9 +212,248 @@ clear1.setAttribute('style',parametrosclearlabel);//carga los estilos del label
 clear1.innerHTML = "C";
 clear.appendChild(clear1);//este inserta el display en el body del HTML 
 console.log("el label clear esta cargada en el DOM " + clear.isConnected); // retorna el estado del display en el DOM
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------*/
+/* Creamos tecla suma del teclado e insertamos en el DOM */
+/*-----------------------------------------------------------------*/
+const suma = document.createElement('button');
+suma.id = 'suma';
+suma.className = 'botones';
+let parametrossuma =
+    "position: absolute;"+
+    "top: 21%;"+
+    "left: 75%;"+
+    "width: 23%;"+
+    "height: 19%;"+
+    "align-items: right;"+
+    "background-color: green;"+
+    "box-shadow: 5px 5px 10px -3px;"+
+    "border-radius: 15px;";
+suma.setAttribute('style',parametrossuma);//carga los estilos del boton
+//suma.innerHTML = '+';//carga el texto del boton
+suma.onclick = function() {
+    digitos.value += '+';
+}
+teclado.appendChild(suma);//este inserta el display en el body del HTML 
+console.log("La tecla sumar esta cargada en el DOM " + suma.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+const suma1 = document.createElement('label');
+suma1.id = 'suma1';
+suma1.className = 'suma1';
+let parametrossumalabel =
+    "position: absolute;"+
+    "top: 0%;"+
+    "left: 0%;"+
+    "width: 100%;"+
+    "height: 100%;"+
+    "user-select: none;"+
+    "align-items: center;"+
+    "font-size: 40px;"+
+    "text-align: center;"+
+    "line-height: 75px;"+
+    "font-weight: bold;"+
+    "justify-content: center;"+
+    "background-color: transparent;";
+suma1.setAttribute('style',parametrossumalabel);//carga los estilos del label
+suma1.innerHTML = "+";
+suma.appendChild(suma1);//este inserta el display en el body del HTML 
+console.log("el label sumar esta cargada en el DOM " + suma.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+/* Creamos tecla resta del teclado e insertamos en el DOM */
+/*-----------------------------------------------------------------*/
+const resta = document.createElement('button');
+resta.id = 'resta';
+resta.className = 'botones';
+let parametrosresta =
+    "position: absolute;"+
+    "top: 41%;"+
+    "left: 75%;"+
+    "width: 23%;"+
+    "height: 19%;"+
+    "align-items: right;"+
+    "background-color: green;"+
+    "box-shadow: 5px 5px 10px -3px;"+
+    "border-radius: 15px;";
+resta.setAttribute('style',parametrosresta);//carga los estilos del boton
+//suma.innerHTML = '+';//carga el texto del boton
+resta.onclick = function() {
+    digitos.value += '-';
+}
+teclado.appendChild(resta);//este inserta el display en el body del HTML 
+console.log("La tecla restar esta cargada en el DOM " + resta.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+const resta1 = document.createElement('label');
+resta1.id = 'resta1';
+resta1.className = 'resta1';
+let parametrosrestalabel =
+    "position: absolute;"+
+    "top: 0%;"+
+    "left: 0%;"+
+    "width: 100%;"+
+    "height: 100%;"+
+    "user-select: none;"+
+    "align-items: center;"+
+    "font-size: 40px;"+
+    "text-align: center;"+
+    "line-height: 65px;"+
+    "font-weight: bold;"+
+    "justify-content: center;"+
+    "background-color: transparent;";
+resta1.setAttribute('style',parametrosrestalabel);//carga los estilos del label
+resta1.innerHTML = "-";
+resta.appendChild(resta1);//este inserta el display en el body del HTML 
+console.log("el label restar esta cargada en el DOM " + resta.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+/* Creamos tecla multiplicacion del teclado e insertamos en el DOM */
+/*-----------------------------------------------------------------*/
+const multi = document.createElement('button');
+multi.id = 'multi';
+multi.className = 'botones';
+let parametrosmulti =
+    "position: absolute;"+
+    "top: 61%;"+
+    "left: 75%;"+
+    "width: 23%;"+
+    "height: 19%;"+
+    "align-items: right;"+
+    "background-color: green;"+
+    "box-shadow: 5px 5px 10px -3px;"+
+    "border-radius: 15px;";
+multi.setAttribute('style',parametrosmulti);//carga los estilos del boton
+//suma.innerHTML = '+';//carga el texto del boton
+multi.onclick = function() {
+    digitos.value += '*';
+}
+teclado.appendChild(multi);//este inserta el display en el body del HTML 
+console.log("La tecla multiplicacion esta cargada en el DOM " + multi.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+const multi1 = document.createElement('label');
+multi1.id = 'multi1';
+multi1.className = 'multi1';
+let parametrosmultilabel =
+    "position: absolute;"+
+    "top: 0%;"+
+    "left: 0%;"+
+    "width: 100%;"+
+    "height: 100%;"+
+    "user-select: none;"+
+    "align-items: center;"+
+    "font-size: 60px;"+
+    "text-align: center;"+
+    "line-height: 95px;"+
+    "font-weight: bold;"+
+    "justify-content: center;"+
+    "background-color: transparent;";
+multi1.setAttribute('style',parametrosmultilabel);//carga los estilos del label
+multi1.innerHTML = "*";
+multi.appendChild(multi1);//este inserta el display en el body del HTML 
+console.log("el label multiplicacion esta cargada en el DOM " + multi.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+/* Creamos tecla division del teclado e insertamos en el DOM */
+/*-----------------------------------------------------------------*/
+const divide = document.createElement('button');
+divide.id = 'divide';
+divide.className = 'botones';
+let parametrosdivide =
+    "position: absolute;"+
+    "top: 81%;"+
+    "left: 75%;"+
+    "width: 23%;"+
+    "height: 18%;"+
+    "align-items: right;"+
+    "background-color: green;"+
+    "box-shadow: 5px 5px 10px -3px;"+
+    "border-radius: 15px;";
+divide.setAttribute('style',parametrosdivide);//carga los estilos del boton
+//suma.innerHTML = '+';//carga el texto del boton
+divide.onclick = function() {
+    digitos.value += '/';
+}
+teclado.appendChild(divide);//este inserta el display en el body del HTML 
+console.log("La tecla division esta cargada en el DOM " + divide.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+const divide1 = document.createElement('label');
+divide1.id = 'divide1';
+divide1.className = 'divide1';
+let parametrosdividelabel =
+    "position: absolute;"+
+    "top: 0%;"+
+    "left: 0%;"+
+    "width: 100%;"+
+    "height: 100%;"+
+    "user-select: none;"+
+    "align-items: center;"+
+    "font-size: 50px;"+
+    "text-align: center;"+
+    "line-height: 75px;"+
+    "font-weight: bold;"+
+    "justify-content: center;"+
+    "background-color: transparent;";
+divide1.setAttribute('style',parametrosdividelabel);//carga los estilos del label
+divide1.innerHTML = "/";
+divide.appendChild(divide1);//este inserta el display en el body del HTML 
+console.log("el label division esta cargada en el DOM " + divide1.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+/* Creamos tecla igual del teclado e insertamos en el DOM */
+/*-----------------------------------------------------------------*/
+const igual = document.createElement('button');
+igual.id = 'igual';
+igual.className = 'botones';
+let parametrosigual =
+    "position: absolute;"+
+    "top: 81%;"+
+    "left: 1.4%;"+
+    "width: 72%;"+
+    "height: 18%;"+
+    "align-items: right;"+
+    "background-color: blue;"+
+    "box-shadow: 5px 5px 10px -3px;"+
+    "border-radius: 15px;";
+igual.setAttribute('style',parametrosigual);//carga los estilos del boton
+//suma.innerHTML = '+';//carga el texto del boton
+igual.onclick = function() {
+    digitos.value += '=';
+}
+teclado.appendChild(igual);//este inserta el display en el body del HTML 
+console.log("La tecla igual esta cargada en el DOM " + igual.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+const igual1 = document.createElement('label');
+igual1.id = 'igual1';
+igual1.className = 'igual1';
+let parametrosiguallabel =
+    "position: absolute;"+
+    "top: 0%;"+
+    "left: 0%;"+
+    "width: 100%;"+
+    "height: 100%;"+
+    "user-select: none;"+
+    "align-items: center;"+
+    "font-size: 60px;"+
+    "text-align: center;"+
+    "line-height: 70px;"+
+    "font-weight: bold;"+
+    "justify-content: center;"+
+    "background-color: transparent;";
+igual1.setAttribute('style',parametrosiguallabel);//carga los estilos del label
+igual1.innerHTML = "=";
+igual.appendChild(igual1);//este inserta el display en el body del HTML 
+console.log("el label igual esta cargada en el DOM " + igual1.isConnected); // retorna el estado del display en el DOM
+
+
+
+
 /*-----------------------------------------------------------------*/
 
-
+   
 
 
 } catch (error) {
