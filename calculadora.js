@@ -1,6 +1,6 @@
 function abre_calculadora() {
     console.log("Hola calculadora de mario y monica ");
-
+var i=0;
 try {
 /*-----------------------------------------------------------------*/
 /* Creamos div de fondo de la calculadora e insertamos en el DOM   */
@@ -102,7 +102,9 @@ let parametros5 =
 digito1.setAttribute('style',parametros5);//carga los estilos del boton
 //digito1.innerHTML = '1';//carga el texto del boton
 digito1.onclick = function() {
+  
     digitos.value += '1';
+    num[i].value +='1';
 }
 teclado.appendChild(digito1);//este inserta el display en el body del HTML 
 console.log("La tecla digito1 esta cargada en el DOM " + digito1.isConnected); // retorna el estado del display en el DOM
@@ -148,6 +150,9 @@ digito2.setAttribute('style',parametros6);//carga los estilos del boton
 //digito2.innerHTML = '2';//carga el texto del boton
 digito2.onclick = function() {
     digitos.value += '2';
+    var num0 = '';
+    num0 +='2';
+    console.log(num0);
 }
 
 teclado.appendChild(digito2);//este inserta el display en el body del HTML 
@@ -194,6 +199,7 @@ digito3.setAttribute('style',parametros7);//carga los estilos del boton
 //digito3.innerHTML = '3';//carga el texto del boton
 digito3.onclick = function() {
     digitos.value += '3';
+    num[i].value +='3';
 }
 teclado.appendChild(digito3);//este inserta el display en el body del HTML 
 console.log("La tecla digito3 esta cargada en el DOM " + digito3.isConnected); // retorna el estado del display en el DOM
@@ -239,6 +245,7 @@ digito4.setAttribute('style',parametros8);//carga los estilos del boton
 //digito4.innerHTML = '4';//carga el texto del boton
 digito4.onclick = function() {
     digitos.value += '4';
+    num[i].value +='4';
 }
 teclado.appendChild(digito4);//este inserta el display en el body del HTML 
 console.log("La tecla digito4 esta cargada en el DOM " + digito4.isConnected); // retorna el estado del display en el DOM
@@ -284,6 +291,7 @@ digito5.setAttribute('style',parametros9);//carga los estilos del boton
 //digito5.innerHTML = '5';//carga el texto del boton
 digito5.onclick = function() {
     digitos.value += '5';
+    num[i].value +='5';
 }
 teclado.appendChild(digito5);//este inserta el display en el body del HTML 
 console.log("La tecla digito5 esta cargada en el DOM " + digito5.isConnected); // retorna el estado del display en el DOM
@@ -329,6 +337,7 @@ digito6.setAttribute('style',parametros10);//carga los estilos del boton
 //digito6.innerHTML = '6';//carga el texto del boton
 digito6.onclick = function() {
     digitos.value += '6';
+    num[i].value +='6';
 }
 teclado.appendChild(digito6);//este inserta el display en el body del HTML 
 console.log("La tecla digito6 esta cargada en el DOM " + digito6.isConnected); // retorna el estado del display en el DOM
@@ -374,6 +383,7 @@ digito7.setAttribute('style',parametros11);//carga los estilos del boton
 //digito7.innerHTML = '7';//carga el texto del boton
 digito7.onclick = function() {
     digitos.value += '7';
+    num[i].value +='7';
 }
 teclado.appendChild(digito7);//este inserta el display en el body del HTML 
 console.log("La tecla digito7 esta cargada en el DOM " + digito7.isConnected); // retorna el estado del display en el DOM
@@ -420,6 +430,7 @@ digito8.setAttribute('style',parametros12);//carga los estilos del boton
 //digito8.innerHTML = '8';//carga el texto del boton
 digito8.onclick = function() {
     digitos.value += '8';
+    num[i].value +='8';
 }
 teclado.appendChild(digito8);//este inserta el display en el body del HTML 
 console.log("La tecla digito8 esta cargada en el DOM " + digito8.isConnected); // retorna el estado del display en el DOM
@@ -465,6 +476,7 @@ digito9.setAttribute('style',parametros13);//carga los estilos del boton
 //digito9.innerHTML = '9';//carga el texto del boton
 digito9.onclick = function() {
     digitos.value += '9';
+    num[i].value +='9';
 }
 teclado.appendChild(digito9);//este inserta el display en el body del HTML 
 console.log("La tecla digito9 esta cargada en el DOM " + digito9.isConnected); // retorna el estado del display en el DOM
@@ -511,6 +523,7 @@ digito0.setAttribute('style',parametros14);//carga los estilos del boton
 //digito0.innerHTML = '0';//carga el texto del boton
 digito0.onclick = function() {
     digitos.value += '0';
+    num[i].value +='0';
 }
 teclado.appendChild(digito0);//este inserta el display en el body del HTML 
 console.log("La tecla digito0 esta cargada en el DOM " + digito0.isConnected); // retorna el estado del display en el DOM
@@ -558,7 +571,7 @@ let parametros15 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito_menos.setAttribute('style',parametros15);//carga los estilos del boton
-//digito_menos.innerHTML = '<--';//carga el texto del boton
+//digito_menos.innerHTML = '<<';//carga el texto del boton
 digito_menos.onclick = function() {
     digitos.value = digitos.value.substring(0, digitos.value.length - 1);
 }
@@ -660,7 +673,11 @@ let parametrossuma =
 suma.setAttribute('style',parametrossuma);//carga los estilos del boton
 //suma.innerHTML = '+';//carga el texto del boton
 suma.onclick = function() {
-    digitos.value += '+';
+    if (digitos.value.length > 0) {
+        digitos.value = digitos.value + '+';
+    }
+    i++;
+    //digitos.value += '+';
 }
 teclado.appendChild(suma);//este inserta el display en el body del HTML 
 console.log("La tecla sumar esta cargada en el DOM " + suma.isConnected); // retorna el estado del display en el DOM
@@ -705,7 +722,10 @@ let parametrosresta =
 resta.setAttribute('style',parametrosresta);//carga los estilos del boton
 //suma.innerHTML = '+';//carga el texto del boton
 resta.onclick = function() {
-    digitos.value += '-';
+    if (digitos.value.length > 0) {
+        digitos.value = digitos.value + '-';
+    }
+    //digitos.value += '-';
 }
 teclado.appendChild(resta);//este inserta el display en el body del HTML 
 console.log("La tecla restar esta cargada en el DOM " + resta.isConnected); // retorna el estado del display en el DOM
@@ -750,7 +770,10 @@ let parametrosmulti =
 multi.setAttribute('style',parametrosmulti);//carga los estilos del boton
 //suma.innerHTML = '+';//carga el texto del boton
 multi.onclick = function() {
-    digitos.value += '*';
+    if (digitos.value.length > 0) {
+        digitos.value = digitos.value + '*';
+    }
+    //digitos.value += '*';
 }
 teclado.appendChild(multi);//este inserta el display en el body del HTML 
 console.log("La tecla multiplicacion esta cargada en el DOM " + multi.isConnected); // retorna el estado del display en el DOM
@@ -795,7 +818,10 @@ let parametrosdivide =
 divide.setAttribute('style',parametrosdivide);//carga los estilos del boton
 //suma.innerHTML = '+';//carga el texto del boton
 divide.onclick = function() {
-    digitos.value += '÷';
+    if (digitos.value.length > 0) {
+        digitos.value = digitos.value + '/';
+    }
+    //digitos.value += '÷';
 }
 teclado.appendChild(divide);//este inserta el display en el body del HTML 
 console.log("La tecla division esta cargada en el DOM " + divide.isConnected); // retorna el estado del display en el DOM
@@ -840,7 +866,10 @@ let parametrosigual =
 igual.setAttribute('style',parametrosigual);//carga los estilos del boton
 //igual.innerHTML = '+';//carga el texto del boton
 igual.onclick = function() {
-    digitos.value += '=';
+    if (digitos.value.length > 0 && num1.value.length > 0 && num2.value.length > 0 && operador.value.length > 0) {
+        digitos.value = digitos.value + '=';
+    }
+    //digitos.value += '=';
 }
 teclado.appendChild(igual);//este inserta el display en el body del HTML 
 console.log("La tecla igual esta cargada en el DOM " + igual.isConnected); // retorna el estado del display en el DOM
@@ -887,9 +916,9 @@ let parametrosmarca =
     "border-radius: 15px;";
 marca.setAttribute('style',parametrosmarca);//carga los estilos del boton
 //marca.innerHTML = '+';//carga el texto del boton
-marca.onclick = function() {
-    digitos.value += '';
-}
+// marca.onclick = function() {
+//     digitos.value += '';
+// }
 teclado.appendChild(marca);//este inserta el display en el body del HTML
 console.log("La marca esta cargada en el DOM " + marca.isConnected); // retorna el estado del display en el DOM
 /*-----------------------------------------------------------------*/  
@@ -920,17 +949,6 @@ console.log("el label division esta cargada en el DOM " + marca1.isConnected); /
 /*-----------------------------------------------------------------*/
 /*Sumar varios numeros y mostrar por display*/
 /*-----------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-    /*-----------------------------------------------------------------*/
 
 
 } catch (error) {
