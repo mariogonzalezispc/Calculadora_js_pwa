@@ -838,7 +838,7 @@ let parametrosigual =
     "box-shadow: 5px 5px 10px -3px;"+
     "border-radius: 15px;";
 igual.setAttribute('style',parametrosigual);//carga los estilos del boton
-//suma.innerHTML = '+';//carga el texto del boton
+//igual.innerHTML = '+';//carga el texto del boton
 igual.onclick = function() {
     digitos.value += '=';
 }
@@ -866,6 +866,7 @@ igual1.setAttribute('style',parametrosiguallabel);//carga los estilos del label
 igual1.innerHTML = "=";
 igual.appendChild(igual1);//este inserta el display en el body del HTML 
 console.log("el label igual esta cargada en el DOM " + igual1.isConnected); // retorna el estado del display en el DOM
+
 
 
 /*-----------------------------------------------------------------*/
@@ -903,10 +904,10 @@ let parametrosmarcalabel =
     "top: 0%;"+
     "left: 0%;"+
     "width: 100%;"+
-    "height: 100%;"+
+    "height: 0%;"+
     "user-select: none;"+
     "align-items: center;"+
-    "font-size: 50px;"+
+    "font-size:25px;"+
     "text-align: center;"+
     "line-height: 55px;"+
     "font-weight: bold;"+
@@ -916,6 +917,9 @@ marca1.setAttribute('style',parametrosmarcalabel);//carga los estilos del label
 marca1.innerHTML = "M&M";
 marca.appendChild(marca1);//este inserta el display en el body del HTML 
 console.log("el label division esta cargada en el DOM " + marca1.isConnected); // retorna el estado del display en el DOM
+/*-----------------------------------------------------------------*/
+/*Sumar varios numeros y mostrar por display*/
+/*-----------------------------------------------------------------*/
 
 
 
@@ -923,6 +927,10 @@ console.log("el label division esta cargada en el DOM " + marca1.isConnected); /
 
 
 
+
+
+
+    /*-----------------------------------------------------------------*/
 
 
 } catch (error) {
