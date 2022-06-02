@@ -1,6 +1,9 @@
 function abre_calculadora() {
     console.log("Hola calculadora de mario y monica ");
-
+let num='';
+let permiso_op=false;
+let permiso_tecla=true;
+// let permiso_res=false;
 try {
 /*-----------------------------------------------------------------*/
 /* Creamos div de fondo de la calculadora e insertamos en el DOM   */
@@ -69,8 +72,8 @@ digitos.className = 'teclado';
 let parametros4 =
     "position: absolute;"+
     "top: 3%;"+
-    "left: 1.4%;"+
-    "width: 95%;"+
+    "left: 0.5%;"+
+    "width: 98%;"+
     "height: 85%;"+
     "user-select: none;"+
     "align-items: right;"+
@@ -78,8 +81,9 @@ let parametros4 =
     "text-align: right;"+
     "line-height: 75px;"+
     "font-weight: bold;"+
-    "background-color: grey;"+
-    "border-radius: 10px;";
+    "background-color: transparent;"+
+    "border: none;";
+    //"border-radius: 10px;";
 digitos.setAttribute('style',parametros4);
 display.appendChild(digitos);//este inserta el display en el body del HTML 
 console.log("El digito esta cargado en el DOM " + digitos.isConnected); // retorna el estado del display en el DOM
@@ -100,9 +104,13 @@ let parametros5 =
     "box-shadow: 5px 5px 10px -3px;"+
     "border-radius: 15px;";
 digito1.setAttribute('style',parametros5);//carga los estilos del boton
-//digito1.innerHTML = '1';//carga el texto del boton
 digito1.onclick = function() {
+    if(permiso_tecla){
     digitos.value += '1';
+    num = num + '1';
+    permiso_op=true;
+    permiso_res=true;
+    }
 }
 teclado.appendChild(digito1);//este inserta el display en el body del HTML 
 console.log("La tecla digito1 esta cargada en el DOM " + digito1.isConnected); // retorna el estado del display en el DOM
@@ -145,9 +153,13 @@ let parametros6 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito2.setAttribute('style',parametros6);//carga los estilos del boton
-//digito2.innerHTML = '2';//carga el texto del boton
 digito2.onclick = function() {
-    digitos.value += '2';
+    if(permiso_tecla){
+        digitos.value += '2';
+        num = num + '2';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 
 teclado.appendChild(digito2);//este inserta el display en el body del HTML 
@@ -191,9 +203,13 @@ let parametros7 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito3.setAttribute('style',parametros7);//carga los estilos del boton
-//digito3.innerHTML = '3';//carga el texto del boton
 digito3.onclick = function() {
-    digitos.value += '3';
+    if(permiso_tecla){
+        digitos.value += '3';
+        num = num + '3';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito3);//este inserta el display en el body del HTML 
 console.log("La tecla digito3 esta cargada en el DOM " + digito3.isConnected); // retorna el estado del display en el DOM
@@ -236,9 +252,13 @@ let parametros8 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito4.setAttribute('style',parametros8);//carga los estilos del boton
-//digito4.innerHTML = '4';//carga el texto del boton
 digito4.onclick = function() {
-    digitos.value += '4';
+    if(permiso_tecla){
+        digitos.value += '4';
+        num = num + '4';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito4);//este inserta el display en el body del HTML 
 console.log("La tecla digito4 esta cargada en el DOM " + digito4.isConnected); // retorna el estado del display en el DOM
@@ -281,9 +301,13 @@ let parametros9 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito5.setAttribute('style',parametros9);//carga los estilos del boton
-//digito5.innerHTML = '5';//carga el texto del boton
 digito5.onclick = function() {
-    digitos.value += '5';
+    if(permiso_tecla){
+        digitos.value += '5';
+        num = num + '5';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito5);//este inserta el display en el body del HTML 
 console.log("La tecla digito5 esta cargada en el DOM " + digito5.isConnected); // retorna el estado del display en el DOM
@@ -326,9 +350,13 @@ let parametros10 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito6.setAttribute('style',parametros10);//carga los estilos del boton
-//digito6.innerHTML = '6';//carga el texto del boton
 digito6.onclick = function() {
-    digitos.value += '6';
+    if(permiso_tecla){
+        digitos.value += '6';
+        num = num + '6';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito6);//este inserta el display en el body del HTML 
 console.log("La tecla digito6 esta cargada en el DOM " + digito6.isConnected); // retorna el estado del display en el DOM
@@ -371,9 +399,13 @@ let parametros11 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito7.setAttribute('style',parametros11);//carga los estilos del boton
-//digito7.innerHTML = '7';//carga el texto del boton
 digito7.onclick = function() {
-    digitos.value += '7';
+    if(permiso_tecla){
+        digitos.value += '7';
+        num = num + '7';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito7);//este inserta el display en el body del HTML 
 console.log("La tecla digito7 esta cargada en el DOM " + digito7.isConnected); // retorna el estado del display en el DOM
@@ -399,7 +431,6 @@ label7.setAttribute('style',parametros11label);//carga los estilos del label
 label7.innerHTML = "7";
 digito7.appendChild(label7);//este inserta el display en el body del HTML 
 console.log("La tecla label7 esta cargada en el DOM " + label7.isConnected); // retorna el estado del display en el DOM
-
 /*-----------------------------------------------------------------*/
 /* Creamos tecla digito8 del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
@@ -417,9 +448,13 @@ let parametros12 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito8.setAttribute('style',parametros12);//carga los estilos del boton
-//digito8.innerHTML = '8';//carga el texto del boton
 digito8.onclick = function() {
-    digitos.value += '8';
+    if(permiso_tecla){
+        digitos.value += '8';
+        num = num + '8';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito8);//este inserta el display en el body del HTML 
 console.log("La tecla digito8 esta cargada en el DOM " + digito8.isConnected); // retorna el estado del display en el DOM
@@ -462,9 +497,13 @@ let parametros13 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito9.setAttribute('style',parametros13);//carga los estilos del boton
-//digito9.innerHTML = '9';//carga el texto del boton
 digito9.onclick = function() {
-    digitos.value += '9';
+    if(permiso_tecla){
+        digitos.value += '9';
+        num = num + '9';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito9);//este inserta el display en el body del HTML 
 console.log("La tecla digito9 esta cargada en el DOM " + digito9.isConnected); // retorna el estado del display en el DOM
@@ -490,7 +529,6 @@ label9.setAttribute('style',parametros13label);//carga los estilos del label
 label9.innerHTML = "9";
 digito9.appendChild(label9);//este inserta el display en el body del HTML 
 console.log("La tecla label9 esta cargada en el DOM " + label9.isConnected); // retorna el estado del display en el DOM
-
 /*-----------------------------------------------------------------*/
 /* Creamos tecla digito0 del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
@@ -508,9 +546,13 @@ let parametros14 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito0.setAttribute('style',parametros14);//carga los estilos del boton
-//digito0.innerHTML = '0';//carga el texto del boton
 digito0.onclick = function() {
-    digitos.value += '0';
+    if(permiso_tecla){
+        digitos.value += '0';
+        num = num + '0';
+        permiso_op=true;
+        permiso_res=true;
+        }
 }
 teclado.appendChild(digito0);//este inserta el display en el body del HTML 
 console.log("La tecla digito0 esta cargada en el DOM " + digito0.isConnected); // retorna el estado del display en el DOM
@@ -536,13 +578,8 @@ label0.setAttribute('style',parametros14label);//carga los estilos del label
 label0.innerHTML = "0";
 digito0.appendChild(label0);//este inserta el display en el body del HTML 
 console.log("La tecla label0 esta cargada en el DOM " + label0.isConnected); // retorna el estado del display en el DOM
-
-
-
-
-
 /*-----------------------------------------------------------------*/
-/* Creamos tecla digito <-- del teclado e insertamos en el DOM */
+/* Creamos tecla digito << del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
 const digito_menos = document.createElement('button');
 digito_menos.id = 'digito_menos';
@@ -558,13 +595,12 @@ let parametros15 =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 digito_menos.setAttribute('style',parametros15);//carga los estilos del boton
-//digito_menos.innerHTML = '<--';//carga el texto del boton
 digito_menos.onclick = function() {
     digitos.value = digitos.value.substring(0, digitos.value.length - 1);
+    num = num.substring(0, num.length - 1);
 }
 teclado.appendChild(digito_menos);//este inserta el display en el body del HTML
 console.log("La tecla digito_menos esta cargada en el DOM " + digito_menos.isConnected); // retorna el estado del display en el DOM
-
 /*-----------------------------------------------------------------*/
 /* Creamos input tecla digito <-- del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
@@ -589,13 +625,6 @@ digito_menos_label.setAttribute('style',parametros15label);//carga los estilos d
 digito_menos_label.innerHTML = "<<";
 digito_menos.appendChild(digito_menos_label);//este inserta el display en el body del HTML
 console.log("La tecla digito_menos_label esta cargada en el DOM " + digito_menos_label.isConnected); // retorna el estado del display en el DOM
-/*-------------------------------------------------------------------------*/
-
-
-
-
-
-
 /*-----------------------------------------------------------------*/
 /* Creamos tecla clear del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
@@ -613,9 +642,12 @@ let parametrosclear =
 "box-shadow: 5px 5px 10px -3px;"+
 "border-radius: 15px;";
 clear.setAttribute('style',parametrosclear);//carga los estilos del boton
-//clear.innerHTML = '';//carga el texto del boton
 clear.onclick = function() {
     digitos.value = '';
+    permiso_op = false;
+    permiso_res=false;
+    permiso_tecla = true;
+    num = '';
 }
 teclado.appendChild(clear);//este inserta el display en el body del HTML 
 console.log("La tecla clear esta cargada en el DOM " + clear.isConnected); // retorna el estado del display en el DOM
@@ -658,9 +690,14 @@ let parametrossuma =
     "box-shadow: 5px 5px 10px -3px;"+
     "border-radius: 15px;";
 suma.setAttribute('style',parametrossuma);//carga los estilos del boton
-//suma.innerHTML = '+';//carga el texto del boton
 suma.onclick = function() {
-    digitos.value += '+';
+    if (digitos.value.length > 0 && permiso_op == true) {
+        digitos.value = digitos.value + '+';
+        num = num + '+';
+        permiso_op = false;
+        permiso_res=false;
+        permiso_tecla=true;
+    }
 }
 teclado.appendChild(suma);//este inserta el display en el body del HTML 
 console.log("La tecla sumar esta cargada en el DOM " + suma.isConnected); // retorna el estado del display en el DOM
@@ -703,9 +740,14 @@ let parametrosresta =
     "box-shadow: 5px 5px 10px -3px;"+
     "border-radius: 15px;";
 resta.setAttribute('style',parametrosresta);//carga los estilos del boton
-//suma.innerHTML = '+';//carga el texto del boton
 resta.onclick = function() {
-    digitos.value += '-';
+    if (digitos.value.length > 0 && permiso_op == true) {
+        digitos.value = digitos.value + '-';
+        num = num + '-';
+        permiso_op = false;
+        permiso_res=false;
+        permiso_tecla=true;
+    }
 }
 teclado.appendChild(resta);//este inserta el display en el body del HTML 
 console.log("La tecla restar esta cargada en el DOM " + resta.isConnected); // retorna el estado del display en el DOM
@@ -748,9 +790,14 @@ let parametrosmulti =
     "box-shadow: 5px 5px 10px -3px;"+
     "border-radius: 15px;";
 multi.setAttribute('style',parametrosmulti);//carga los estilos del boton
-//suma.innerHTML = '+';//carga el texto del boton
 multi.onclick = function() {
-    digitos.value += '*';
+    if (digitos.value.length > 0 && permiso_op == true) {
+        digitos.value = digitos.value + '*';
+        num = num + '*';
+        permiso_op = false;
+        permiso_res=false;
+        permiso_tecla=true;
+    }
 }
 teclado.appendChild(multi);//este inserta el display en el body del HTML 
 console.log("La tecla multiplicacion esta cargada en el DOM " + multi.isConnected); // retorna el estado del display en el DOM
@@ -793,9 +840,14 @@ let parametrosdivide =
     "box-shadow: 5px 5px 10px -3px;"+
     "border-radius: 15px;";
 divide.setAttribute('style',parametrosdivide);//carga los estilos del boton
-//suma.innerHTML = '+';//carga el texto del boton
 divide.onclick = function() {
-    digitos.value += '÷';
+    if (digitos.value.length > 0 && permiso_op == true) {
+        digitos.value = digitos.value + '÷';
+        num = num + '/';
+        permiso_op = false;
+        permiso_res=false;
+        permiso_tecla=true;
+    }
 }
 teclado.appendChild(divide);//este inserta el display en el body del HTML 
 console.log("La tecla division esta cargada en el DOM " + divide.isConnected); // retorna el estado del display en el DOM
@@ -828,19 +880,29 @@ const igual = document.createElement('button');
 igual.id = 'igual';
 igual.className = 'botones';
 let parametrosigual =
-    "position: absolute;"+
-    "top: 81%;"+
-    "left: 1.4%;"+
-    "width: 70.5%;"+
-    "height: 18%;"+
-    "align-items: right;"+
-    "background-color: blue;"+
-    "box-shadow: 5px 5px 10px -3px;"+
+    "position: absolute;" +
+    "top: 81%;" +
+    "left: 1.4%;" +
+    "width: 70.5%;" +
+    "height: 18%;" +
+    "align-items: right;" +
+    "background-color: blue;" +
+    "box-shadow: 5px 5px 10px -3px;" +
     "border-radius: 15px;";
-igual.setAttribute('style',parametrosigual);//carga los estilos del boton
+igual.setAttribute('style', parametrosigual); //carga los estilos del boton
 //igual.innerHTML = '+';//carga el texto del boton
-igual.onclick = function() {
-    digitos.value += '=';
+igual.onclick = function () {
+    if (digitos.value.length > 0 && permiso_res == true) {
+        digitos.value = digitos.value + '=';
+
+    console.log(num);
+    let sol = eval(num);
+    console.log(sol);
+    digitos.value = digitos.value + sol;
+    permiso_op = true;
+    permiso_tecla = false;
+    //num = '';
+}
 }
 teclado.appendChild(igual);//este inserta el display en el body del HTML 
 console.log("La tecla igual esta cargada en el DOM " + igual.isConnected); // retorna el estado del display en el DOM
@@ -866,9 +928,6 @@ igual1.setAttribute('style',parametrosiguallabel);//carga los estilos del label
 igual1.innerHTML = "=";
 igual.appendChild(igual1);//este inserta el display en el body del HTML 
 console.log("el label igual esta cargada en el DOM " + igual1.isConnected); // retorna el estado del display en el DOM
-
-
-
 /*-----------------------------------------------------------------*/
 /*creamos boton de marca del teclado*/
 /*-----------------------------------------------------------------*/
@@ -886,13 +945,8 @@ let parametrosmarca =
     "box-shadow: 5px 5px 10px -3px;"+
     "border-radius: 15px;";
 marca.setAttribute('style',parametrosmarca);//carga los estilos del boton
-//marca.innerHTML = '+';//carga el texto del boton
-marca.onclick = function() {
-    digitos.value += '';
-}
 teclado.appendChild(marca);//este inserta el display en el body del HTML
 console.log("La marca esta cargada en el DOM " + marca.isConnected); // retorna el estado del display en el DOM
-/*-----------------------------------------------------------------*/  
 /*-----------------------------------------------------------------*/
 /* Creamos marca del teclado e insertamos en el DOM */
 /*-----------------------------------------------------------------*/
@@ -918,26 +972,31 @@ marca1.innerHTML = "M&M";
 marca.appendChild(marca1);//este inserta el display en el body del HTML 
 console.log("el label division esta cargada en el DOM " + marca1.isConnected); // retorna el estado del display en el DOM
 /*-----------------------------------------------------------------*/
-/*Sumar varios numeros y mostrar por display*/
+/* Creamos identificacion de ispce insertamos en el DOM */
 /*-----------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-    /*-----------------------------------------------------------------*/
-
+const ispc = document.createElement('label');
+ispc.id = 'ispc';
+ispc.className = 'ispc';
+let parametrosispclabel =
+    "position: absolute;"+
+    "top: 0.1%;"+
+    "left: 1%;"+
+    "width: 35%;"+
+    "height: 3%;"+
+    "user-select: none;"+
+    "align-items: center;"+
+    "font-size: 10px;"+
+    "text-align: center;"+
+    "line-height: 15px;"+
+    "font-weight: bold;"+
+    "justify-content: center;"+
+    "background-color: transparent;";
+ispc.setAttribute('style',parametrosispclabel);//carga los estilos del label
+ispc.innerHTML = "ISPC TSDWAD 2021";
+fondo.appendChild(ispc);//este inserta el display en el body del HTML 
+console.log("el label division esta cargada en el DOM " + marca1.isConnected); // retorna el estado del display en el DOM
 
 } catch (error) {
     alert("Error al cargar la calculadora " + error);
 }
-}
-
-function add_number(numero) {
-    console.log("Hola soy el boton "+ numero);
 }
