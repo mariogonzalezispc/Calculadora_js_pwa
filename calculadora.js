@@ -24,7 +24,8 @@ function abre_calculadora() {
             "justify-content: center;";
         fondo.setAttribute('style', parametros);
         document.body.appendChild(fondo); //este inserta el div en el body del HTML 
-        //console.log("El fondo esta cargado en el DOM " + fondo.isConnected); // retorna el estado del div en el DOM
+        //console.log("El fondo esta cargado en el DOM " + fondo.isConnected); 
+        // retorna el estado del div en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos div de display de la calculadora e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -43,7 +44,8 @@ function abre_calculadora() {
             "border: 2px solid black;";
         display.setAttribute('style', parametros2); //carga los estilos de los elementos
         fondo.appendChild(display); //este inserta el display en el body del HTML 
-        //console.log("El display esta cargado en el DOM " + display.isConnected); // retorna el estado del display en el DOM
+        //console.log("El display esta cargado en el DOM " + display.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos div del teclado de la calculadora e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -62,7 +64,8 @@ function abre_calculadora() {
             "border: 2px solid black;";
         teclado.setAttribute('style', parametros3); //carga los estilos de los elementos
         fondo.appendChild(teclado); //este inserta el display en el body del HTML 
-        //console.log("El teclado esta cargado en el DOM " + teclado.isConnected); // retorna el estado del display en el DOM
+        //console.log("El teclado esta cargado en el DOM " + teclado.isConnected); 
+        // retorna el estado del teclado en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos input digitos del display e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -86,7 +89,8 @@ function abre_calculadora() {
         //"border-radius: 10px;";
         digitos.setAttribute('style', parametros4); //carga los estilos de los elementos
         display.appendChild(digitos); //este inserta el display en el body del HTML 
-        //console.log("El digito esta cargado en el DOM " + digitos.isConnected); // retorna el estado del display en el DOM
+        //console.log("El digito esta cargado en el DOM " + digitos.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito1 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -114,7 +118,7 @@ function abre_calculadora() {
         }
         teclado.appendChild(digito1); //este inserta el display en el teclado del HTML 
         //console.log("La tecla digito1 esta cargada en el DOM " + digito1.isConnected); 
-        // retorna el estado del display en el DOM
+        // retorna el estado del numero1 en el DOM
         /*-----------------------------------------------------------------*/
         const label1 = document.createElement('label');//creamos label
         label1.id = 'label1';               //establecemos el id del label
@@ -136,7 +140,8 @@ function abre_calculadora() {
         label1.setAttribute('style', parametros5label); //carga los estilos del label
         label1.innerHTML = "1";
         digito1.appendChild(label1); //este inserta el label en el button 
-        //console.log("La tecla label1 esta cargada en el DOM " + label1.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label1 esta cargada en el DOM " + label1.isConnected); 
+        // retorna el estado del label1 en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito2 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -163,7 +168,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito2); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito2 esta cargada en el DOM " + digito2.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito2 esta cargada en el DOM " + digito2.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label2 = document.createElement('label');//creamos label
         label2.id = 'label2';               //establecemos el id del label
@@ -185,7 +191,8 @@ function abre_calculadora() {
         label2.setAttribute('style', parametros6label); //carga los estilos del label
         label2.innerHTML = "2";
         digito2.appendChild(label2); //este inserta el label en el button
-        //console.log("La tecla label2 esta cargada en el DOM " + label2.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label2 esta cargada en el DOM " + label2.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito3 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -212,7 +219,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito3); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito3 esta cargada en el DOM " + digito3.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito3 esta cargada en el DOM " + digito3.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label3 = document.createElement('label');//creamos label
         label3.id = 'label3';               //establecemos el id del label
@@ -234,7 +242,8 @@ function abre_calculadora() {
         label3.setAttribute('style', parametros7label); //carga los estilos del label
         label3.innerHTML = "3";
         digito3.appendChild(label3); //este inserta el label en el button 
-        //console.log("La tecla label3 esta cargada en el DOM " + label3.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label3 esta cargada en el DOM " + label3.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito4 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -261,7 +270,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito4); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito4 esta cargada en el DOM " + digito4.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito4 esta cargada en el DOM " + digito4.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label4 = document.createElement('label');
         label4.id = 'label4';               //establecemos el id del label
@@ -283,7 +293,8 @@ function abre_calculadora() {
         label4.setAttribute('style', parametros8label); //carga los estilos del label
         label4.innerHTML = "4";
         digito4.appendChild(label4); //este inserta el label en el button
-        //console.log("La tecla label4 esta cargada en el DOM " + label4.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label4 esta cargada en el DOM " + label4.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito5 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -310,7 +321,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito5); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito5 esta cargada en el DOM " + digito5.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito5 esta cargada en el DOM " + digito5.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label5 = document.createElement('label');
         label5.id = 'label5';               //establecemos el id del label
@@ -332,7 +344,8 @@ function abre_calculadora() {
         label5.setAttribute('style', parametros9label); //carga los estilos del label
         label5.innerHTML = "5";
         digito5.appendChild(label5); //este inserta el label en el button
-        //console.log("La tecla label5 esta cargada en el DOM " + label5.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label5 esta cargada en el DOM " + label5.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito6 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -359,7 +372,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito6); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito6 esta cargada en el DOM " + digito6.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito6 esta cargada en el DOM " + digito6.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label6 = document.createElement('label');
         label6.id = 'label6';               //establecemos el id del label
@@ -381,7 +395,8 @@ function abre_calculadora() {
         label6.setAttribute('style', parametros10label); //carga los estilos del label
         label6.innerHTML = "6";
         digito6.appendChild(label6); //este inserta el label en el button 
-        //console.log("La tecla label6 esta cargada en el DOM " + label6.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label6 esta cargada en el DOM " + label6.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito7 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -408,7 +423,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito7); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito7 esta cargada en el DOM " + digito7.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito7 esta cargada en el DOM " + digito7.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label7 = document.createElement('label');
         label7.id = 'label7';               //establecemos el id del label
@@ -430,7 +446,8 @@ function abre_calculadora() {
         label7.setAttribute('style', parametros11label); //carga los estilos del label
         label7.innerHTML = "7";
         digito7.appendChild(label7); //este inserta el label en el button
-        //console.log("La tecla label7 esta cargada en el DOM " + label7.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label7 esta cargada en el DOM " + label7.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito8 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -457,7 +474,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito8); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito8 esta cargada en el DOM " + digito8.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito8 esta cargada en el DOM " + digito8.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label8 = document.createElement('label');
         label8.id = 'label8';               //establecemos el id del label
@@ -479,7 +497,8 @@ function abre_calculadora() {
         label8.setAttribute('style', parametros12label); //carga los estilos del label
         label8.innerHTML = "8";
         digito8.appendChild(label8); //este inserta el label en el button 
-        //console.log("La tecla label8 esta cargada en el DOM " + label8.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label8 esta cargada en el DOM " + label8.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito9 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -506,7 +525,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito9); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito9 esta cargada en el DOM " + digito9.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito9 esta cargada en el DOM " + digito9.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label9 = document.createElement('label');
         label9.id = 'label9';               //establecemos el id del label
@@ -528,7 +548,8 @@ function abre_calculadora() {
         label9.setAttribute('style', parametros13label); //carga los estilos del label
         label9.innerHTML = "9";
         digito9.appendChild(label9); //este inserta el label en el button
-        //console.log("La tecla label9 esta cargada en el DOM " + label9.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label9 esta cargada en el DOM " + label9.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito0 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -555,7 +576,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(digito0); //este inserta el display en el body del HTML 
-        //console.log("La tecla digito0 esta cargada en el DOM " + digito0.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito0 esta cargada en el DOM " + digito0.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label0 = document.createElement('label');
         label0.id = 'label0';               //establecemos el id del label
@@ -577,7 +599,8 @@ function abre_calculadora() {
         label0.setAttribute('style', parametros14label); //carga los estilos del label
         label0.innerHTML = "0";
         digito0.appendChild(label0); //este inserta el label en el button 
-        //console.log("La tecla label0 esta cargada en el DOM " + label0.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla label0 esta cargada en el DOM " + label0.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito << del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -600,7 +623,8 @@ function abre_calculadora() {
             num = num.substring(0, num.length - 1);
         }
         teclado.appendChild(digito_menos); //este inserta el display en el body del HTML
-        //console.log("La tecla digito_menos esta cargada en el DOM " + digito_menos.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito_menos esta cargada en el DOM " + digito_menos.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos input tecla digito <-- del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -624,7 +648,8 @@ function abre_calculadora() {
         digito_menos_label.setAttribute('style', parametros15label); //carga los estilos del label
         digito_menos_label.innerHTML = "<<";
         digito_menos.appendChild(digito_menos_label); //este inserta el label en el button
-        //console.log("La tecla digito_menos_label esta cargada en el DOM " + digito_menos_label.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla digito_menos_label esta cargada en el DOM " + digito_menos_label.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla clear del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -650,7 +675,8 @@ function abre_calculadora() {
             num = '';
         }
         teclado.appendChild(clear); //este inserta el display en el body del HTML 
-        //console.log("La tecla clear esta cargada en el DOM " + clear.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla clear esta cargada en el DOM " + clear.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const clear1 = document.createElement('label');
         clear1.id = 'clear1';
@@ -672,7 +698,8 @@ function abre_calculadora() {
         clear1.setAttribute('style', parametrosclearlabel); //carga los estilos del label
         clear1.innerHTML = "C";
         clear.appendChild(clear1); //este inserta el label en el button
-        //console.log("el label clear esta cargada en el DOM " + clear.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label clear esta cargada en el DOM " + clear.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla suma del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -700,7 +727,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(suma); //este inserta el display en el body del HTML 
-        //console.log("La tecla sumar esta cargada en el DOM " + suma.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla sumar esta cargada en el DOM " + suma.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const suma1 = document.createElement('label');
         suma1.id = 'suma1';
@@ -722,7 +750,8 @@ function abre_calculadora() {
         suma1.setAttribute('style', parametrossumalabel); //carga los estilos del label
         suma1.innerHTML = "+";
         suma.appendChild(suma1); //este inserta el label en el button 
-        //console.log("el label sumar esta cargada en el DOM " + suma.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label sumar esta cargada en el DOM " + suma.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla resta del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -750,7 +779,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(resta); //este inserta el display en el body del HTML 
-        //console.log("La tecla restar esta cargada en el DOM " + resta.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla restar esta cargada en el DOM " + resta.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const resta1 = document.createElement('label');
         resta1.id = 'resta1';
@@ -772,7 +802,8 @@ function abre_calculadora() {
         resta1.setAttribute('style', parametrosrestalabel); //carga los estilos del label
         resta1.innerHTML = "-";
         resta.appendChild(resta1); //este inserta el label en el button 
-        //console.log("el label restar esta cargada en el DOM " + resta.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label restar esta cargada en el DOM " + resta.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla multiplicacion del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -800,7 +831,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(multi); //este inserta el label en el button
-        //console.log("La tecla multiplicacion esta cargada en el DOM " + multi.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla multiplicacion esta cargada en el DOM " + multi.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const multi1 = document.createElement('label');
         multi1.id = 'multi1';
@@ -822,7 +854,8 @@ function abre_calculadora() {
         multi1.setAttribute('style', parametrosmultilabel); //carga los estilos del label
         multi1.innerHTML = "*";
         multi.appendChild(multi1); //este inserta el display en el body del HTML 
-        //console.log("el label multiplicacion esta cargada en el DOM " + multi.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label multiplicacion esta cargada en el DOM " + multi.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla division del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -850,7 +883,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(divide); //este inserta el label en el button
-        //console.log("La tecla division esta cargada en el DOM " + divide.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla division esta cargada en el DOM " + divide.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const divide1 = document.createElement('label');
         divide1.id = 'divide1';
@@ -872,7 +906,8 @@ function abre_calculadora() {
         divide1.setAttribute('style', parametrosdividelabel); //carga los estilos del label
         divide1.innerHTML = "÷";
         divide.appendChild(divide1); //este inserta el display en el body del HTML 
-        //console.log("el label division esta cargada en el DOM " + divide1.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label division esta cargada en el DOM " + divide1.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos tecla igual del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -907,7 +942,8 @@ function abre_calculadora() {
             }
         }
         teclado.appendChild(igual); //este inserta el label en el button
-        //console.log("La tecla igual esta cargada en el DOM " + igual.isConnected); // retorna el estado del display en el DOM
+        //console.log("La tecla igual esta cargada en el DOM " + igual.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const igual1 = document.createElement('label');
         igual1.id = 'igual1';
@@ -929,7 +965,8 @@ function abre_calculadora() {
         igual1.setAttribute('style', parametrosiguallabel); //carga los estilos del label
         igual1.innerHTML = "=";//
         igual.appendChild(igual1); //este inserta el display en el body del HTML 
-        //console.log("el label igual esta cargada en el DOM " + igual1.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label igual esta cargada en el DOM " + igual1.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /*creamos boton de marca del teclado*/
         /*-----------------------------------------------------------------*/
@@ -948,7 +985,8 @@ function abre_calculadora() {
             "border-radius: 15px;";
         marca.setAttribute('style', parametrosmarca); //carga los estilos del boton
         teclado.appendChild(marca); //este inserta el display en el body del HTML
-        //console.log("La marca esta cargada en el DOM " + marca.isConnected); // retorna el estado del display en el DOM
+        //console.log("La marca esta cargada en el DOM " + marca.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos marca del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -972,7 +1010,8 @@ function abre_calculadora() {
         marca1.setAttribute('style', parametrosmarcalabel); //carga los estilos del label
         marca1.innerHTML = "M&M";
         marca.appendChild(marca1); //este inserta el label en el button
-        //console.log("el label division esta cargada en el DOM " + marca1.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label division esta cargada en el DOM " + marca1.isConnected); 
+        // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         /* Creamos identificacion de ispce insertamos en el DOM */
         /*-----------------------------------------------------------------*/
@@ -997,7 +1036,8 @@ function abre_calculadora() {
         ispc.setAttribute('style', parametrosispclabel); //carga los estilos del label
         ispc.innerHTML = "ISPC TSDWAD 2021";
         fondo.appendChild(ispc); //este inserta el label en el cuerpo de la calculadora 
-        //console.log("el label division esta cargada en el DOM " + marca1.isConnected); // retorna el estado del display en el DOM
+        //console.log("el label division esta cargada en el DOM " + marca1.isConnected); 
+        // retorna el estado del display en el DOM
     } catch (error) {
         alert("Error al cargar la calculadora " + error);
     }
