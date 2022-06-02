@@ -896,6 +896,7 @@ igual.onclick = function () {
     //console.log(num);
     let sol = eval(num);
     //console.log(sol);
+    digitos.value = '';
     digitos.value = digitos.value + sol;
     let sol1 = String(sol);
     num = sol1;
@@ -979,7 +980,7 @@ ispc.className = 'ispc';
 let parametrosispclabel =
     "position: absolute;"+
     "top: 0.1%;"+
-    "left: 1%;"+
+    "left: 1.2%;"+
     "width: 35%;"+
     "height: 3%;"+
     "user-select: none;"+
