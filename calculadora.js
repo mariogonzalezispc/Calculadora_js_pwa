@@ -847,7 +847,7 @@ function abre_calculadora() {
             "align-items: center;" +
             "font-size: 60px;" +
             "text-align: center;" +
-            "line-height: 85px;" +
+            "line-height: 75px;" +
             "font-weight: bold;" +
             "justify-content: center;" +
             "background-color: transparent;";
