@@ -1,17 +1,17 @@
 function abre_calculadora() {
     console.log("Hola calculadora de Mario y Monica ISPC TSDWAD 2022");
     let num = '';
-    let permiso_op = false;
-    let permiso_tecla = true;
-    let permiso_res=false;
+    let permiso_op = false;//permiso de operacion
+    let permiso_tecla = true;//permiso de tecla
+    let permiso_res=false;//permiso de resultado
     try {
         /*-----------------------------------------------------------------*/
         /* Creamos div de fondo de la calculadora e insertamos en el DOM   */
         /*-----------------------------------------------------------------*/
-        const fondo = document.createElement('div');
-        fondo.id = 'fondo';
-        fondo.className = 'calculadora';
-        let parametros =
+        const fondo = document.createElement('div');//creamos div
+        fondo.id = 'fondo';                     //establebecemos el id del div
+        fondo.className = 'calculadora';        //establecemos la clase del div para uso futuro
+        let parametros =                        //establecemos los parametros aspectos del div
             "position: absolute;" +
             "top: 5%;" +
             "left: 2%;" +
@@ -28,10 +28,10 @@ function abre_calculadora() {
         /*-----------------------------------------------------------------*/
         /* Creamos div de display de la calculadora e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
-        const display = document.createElement('div');
-        display.id = 'display';
-        display.className = 'display';
-        let parametros2 =
+        const display = document.createElement('div');//creamos div
+        display.id = 'display';             //establecemos el id del div
+        display.className = 'display';      //establecemos la clase del div para uso futuro
+        let parametros2 =                   //establecemos los parametros aspectos del div
             "position: absolute;" +
             "top: 4%;" +
             "left: 4%;" +
@@ -47,10 +47,10 @@ function abre_calculadora() {
         /*-----------------------------------------------------------------*/
         /* Creamos div del teclado de la calculadora e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
-        const teclado = document.createElement('div');
-        teclado.id = 'teclado';
-        teclado.className = 'teclado';
-        let parametros3 =
+        const teclado = document.createElement('div');//creamos div
+        teclado.id = 'teclado';             //establecemos el id del div
+        teclado.className = 'teclado';      //establecemos la clase del div para uso futuro
+        let parametros3 =                   //establecemos los parametros aspectos del div
             "position: absolute;" +
             "top: 22%;" +
             "left: 4%;" +
@@ -66,10 +66,10 @@ function abre_calculadora() {
         /*-----------------------------------------------------------------*/
         /* Creamos input digitos del display e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
-        const digitos = document.createElement('input');
-        digitos.id = 'digitos';
-        digitos.className = 'teclado';
-        let parametros4 =
+        const digitos = document.createElement('input');//creamos input
+        digitos.id = 'digitos';             //establecemos el id del input
+        digitos.className = 'teclado';      //establecemos la clase del input para uso futuro
+        let parametros4 =                   //establecemos los parametros aspectos del input
             "position: absolute;" +
             "top: 3%;" +
             "left: 0.5%;" +
@@ -90,10 +90,10 @@ function abre_calculadora() {
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito1 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
-        const digito1 = document.createElement('button');
-        digito1.id = 'digito1';
-        digito1.className = 'botones';
-        let parametros5 =
+        const digito1 = document.createElement('button');//creamos button
+        digito1.id = 'digito1';             //establecemos el id del boton
+        digito1.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros5 =                   //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 1%;" +
             "left: 1.4%;" +
@@ -116,10 +116,10 @@ function abre_calculadora() {
         //console.log("La tecla digito1 esta cargada en el DOM " + digito1.isConnected); 
         // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
-        const label1 = document.createElement('label');
-        label1.id = 'label1';
-        label1.className = 'label1';
-        let parametros5label =
+        const label1 = document.createElement('label');//creamos label
+        label1.id = 'label1';               //establecemos el id del label
+        label1.className = 'label1';        //establecemos la clase del label para uso futuro
+        let parametros5label =              //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -140,10 +140,10 @@ function abre_calculadora() {
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito2 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
-        const digito2 = document.createElement('button');
-        digito2.id = 'digito2';
-        digito2.className = 'botones';
-        let parametros6 =
+        const digito2 = document.createElement('button');//creamos button
+        digito2.id = 'digito2';             //establecemos el id del boton
+        digito2.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros6 =                   //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 1%;" +
             "left: 25%;" +
@@ -165,10 +165,10 @@ function abre_calculadora() {
         teclado.appendChild(digito2); //este inserta el display en el body del HTML 
         //console.log("La tecla digito2 esta cargada en el DOM " + digito2.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
-        const label2 = document.createElement('label');
-        label2.id = 'label2';
-        label2.className = 'label2';
-        let parametros6label =
+        const label2 = document.createElement('label');//creamos label
+        label2.id = 'label2';               //establecemos el id del label
+        label2.className = 'label2';        //establecemos la clase del label para uso futuro
+        let parametros6label =              //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -189,10 +189,10 @@ function abre_calculadora() {
         /*-----------------------------------------------------------------*/
         /* Creamos tecla digito3 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
-        const digito3 = document.createElement('button');
-        digito3.id = 'digito3';
-        digito3.className = 'botones';
-        let parametros7 =
+        const digito3 = document.createElement('button');//creamos button
+        digito3.id = 'digito3';             //establecemos el id del boton
+        digito3.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros7 =                   //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 1%;" +
             "left: 49%;" +
@@ -214,10 +214,10 @@ function abre_calculadora() {
         teclado.appendChild(digito3); //este inserta el display en el body del HTML 
         //console.log("La tecla digito3 esta cargada en el DOM " + digito3.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
-        const label3 = document.createElement('label');
-        label3.id = 'label3';
-        label3.className = 'label3';
-        let parametros7label =
+        const label3 = document.createElement('label');//creamos label
+        label3.id = 'label3';               //establecemos el id del label
+        label3.className = 'label3';        //establecemos la clase del label para uso futuro
+        let parametros7label =              //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -239,9 +239,9 @@ function abre_calculadora() {
         /* Creamos tecla digito4 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
         const digito4 = document.createElement('button');
-        digito4.id = 'digito4';
-        digito4.className = 'botones';
-        let parametros8 =
+        digito4.id = 'digito4';             //establecemos el id del boton
+        digito4.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros8 =                   //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 21%;" +
             "left: 1.4%;" +
@@ -264,9 +264,9 @@ function abre_calculadora() {
         //console.log("La tecla digito4 esta cargada en el DOM " + digito4.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label4 = document.createElement('label');
-        label4.id = 'label4';
-        label4.className = 'label4';
-        let parametros8label =
+        label4.id = 'label4';               //establecemos el id del label
+        label4.className = 'label4';        //establecemos la clase del label para uso futuro
+        let parametros8label =              //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -288,9 +288,9 @@ function abre_calculadora() {
         /* Creamos tecla digito5 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
         const digito5 = document.createElement('button');
-        digito5.id = 'digito5';
-        digito5.className = 'botones';
-        let parametros9 =
+        digito5.id = 'digito5';             //establecemos el id del boton
+        digito5.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros9 =                   //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 21%;" +
             "left: 25%;" +
@@ -313,9 +313,9 @@ function abre_calculadora() {
         //console.log("La tecla digito5 esta cargada en el DOM " + digito5.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label5 = document.createElement('label');
-        label5.id = 'label5';
-        label5.className = 'label5';
-        let parametros9label =
+        label5.id = 'label5';               //establecemos el id del label
+        label5.className = 'label5';        //establecemos la clase del label para uso futuro
+        let parametros9label =              //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -337,9 +337,9 @@ function abre_calculadora() {
         /* Creamos tecla digito6 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
         const digito6 = document.createElement('button');
-        digito6.id = 'digito6';
-        digito6.className = 'botones';
-        let parametros10 =
+        digito6.id = 'digito6';             //establecemos el id del boton
+        digito6.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros10 =                  //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 21%;" +
             "left: 49%;" +
@@ -362,9 +362,9 @@ function abre_calculadora() {
         //console.log("La tecla digito6 esta cargada en el DOM " + digito6.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label6 = document.createElement('label');
-        label6.id = 'label6';
-        label6.className = 'label6';
-        let parametros10label =
+        label6.id = 'label6';               //establecemos el id del label
+        label6.className = 'label6';        //establecemos la clase del label para uso futuro
+        let parametros10label =             //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -386,9 +386,9 @@ function abre_calculadora() {
         /* Creamos tecla digito7 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
         const digito7 = document.createElement('button');
-        digito7.id = 'digito7';
-        digito7.className = 'botones';
-        let parametros11 =
+        digito7.id = 'digito7';             //establecemos el id del boton
+        digito7.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros11 =                  //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 41%;" +
             "left: 1.4%;" +
@@ -411,9 +411,9 @@ function abre_calculadora() {
         //console.log("La tecla digito7 esta cargada en el DOM " + digito7.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label7 = document.createElement('label');
-        label7.id = 'label7';
-        label7.className = 'label7';
-        let parametros11label =
+        label7.id = 'label7';               //establecemos el id del label
+        label7.className = 'label7';        //establecemos la clase del label para uso futuro
+        let parametros11label =             //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -435,9 +435,9 @@ function abre_calculadora() {
         /* Creamos tecla digito8 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
         const digito8 = document.createElement('button');
-        digito8.id = 'digito8';
-        digito8.className = 'botones';
-        let parametros12 =
+        digito8.id = 'digito8';             //establecemos el id del boton
+        digito8.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros12 =                  //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 41%;" +
             "left: 25%;" +
@@ -460,9 +460,9 @@ function abre_calculadora() {
         //console.log("La tecla digito8 esta cargada en el DOM " + digito8.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label8 = document.createElement('label');
-        label8.id = 'label8';
-        label8.className = 'label8';
-        let parametros12label =
+        label8.id = 'label8';               //establecemos el id del label
+        label8.className = 'label8';        //establecemos la clase del label para uso futuro
+        let parametros12label =             //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -484,9 +484,9 @@ function abre_calculadora() {
         /* Creamos tecla digito9 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
         const digito9 = document.createElement('button');
-        digito9.id = 'digito9';
-        digito9.className = 'botones';
-        let parametros13 =
+        digito9.id = 'digito9';             //establecemos el id del boton
+        digito9.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros13 =                  //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 41%;" +
             "left: 49%;" +
@@ -509,9 +509,9 @@ function abre_calculadora() {
         //console.log("La tecla digito9 esta cargada en el DOM " + digito9.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label9 = document.createElement('label');
-        label9.id = 'label9';
-        label9.className = 'label9';
-        let parametros13label =
+        label9.id = 'label9';               //establecemos el id del label
+        label9.className = 'label9';        //establecemos la clase del label para uso futuro
+        let parametros13label =             //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -533,9 +533,9 @@ function abre_calculadora() {
         /* Creamos tecla digito0 del teclado e insertamos en el DOM */
         /*-----------------------------------------------------------------*/
         const digito0 = document.createElement('button');
-        digito0.id = 'digito0';
-        digito0.className = 'botones';
-        let parametros14 =
+        digito0.id = 'digito0';             //establecemos el id del boton
+        digito0.className = 'botones';      //establecemos la clase del boton para uso futuro
+        let parametros14 =                  //establecemos los parametros aspectos del boton
             "position: absolute;" +
             "top: 61%;" +
             "left: 25%;" +
@@ -558,9 +558,9 @@ function abre_calculadora() {
         //console.log("La tecla digito0 esta cargada en el DOM " + digito0.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
         const label0 = document.createElement('label');
-        label0.id = 'label0';
-        label0.className = 'label0';
-        let parametros14label =
+        label0.id = 'label0';               //establecemos el id del label
+        label0.className = 'label0';        //establecemos la clase del label para uso futuro
+        let parametros14label =             //establecemos los parametros aspectos del label
             "position: absolute;" +
             "top: 0%;" +
             "left: 0%;" +
@@ -842,11 +842,11 @@ function abre_calculadora() {
         divide.setAttribute('style', parametrosdivide); //carga los estilos del boton
         divide.onclick = function () {
             if (digitos.value.length > 0 && permiso_op == true) {
-                digitos.value = digitos.value + '÷';
-                num = num + '/';
-                permiso_op = false;
-                permiso_res = false;
-                permiso_tecla = true;
+                digitos.value = digitos.value + '÷';//cambia el valor del display
+                num = num + '/';//carga la division en num
+                permiso_op = false;//permiso de operaciones
+                permiso_res = false;//permiso de resultado
+                permiso_tecla = true;//permiso de tecla
             }
         }
         teclado.appendChild(divide); //este inserta el label en el button
@@ -893,17 +893,17 @@ function abre_calculadora() {
         //igual.innerHTML = '+';//carga el texto del boton
         igual.onclick = function () {
             if (digitos.value.length > 0 && permiso_res == true) {
-                digitos.value = digitos.value + '=';
+                //digitos.value = digitos.value + '=';//cargo el signo igual al display 
                 //console.log(num);
-                let sol = eval(num);
+                let sol = eval(num);//realiza la operacion sobre el string num
                 //console.log(sol);
                 digitos.value = '';
-                digitos.value = digitos.value + sol;
-                let sol1 = String(sol);
-                num = sol1;
-                permiso_op = true;
-                permiso_tecla = false;
-                permiso_res = false;
+                digitos.value = digitos.value + sol;//cargo el resultado al display
+                let sol1 = String(sol); //convierto el resultado en string para poder compararlo con el display
+                num = sol1;//cargo el resultado en la variable num para poder operar con el siguiente numero
+                permiso_op = true;//permiso de operaciones
+                permiso_tecla = false;//permiso de teclas
+                permiso_res = false;//permiso de resultado
             }
         }
         teclado.appendChild(igual); //este inserta el label en el button
@@ -927,7 +927,7 @@ function abre_calculadora() {
             "justify-content: center;" +
             "background-color: transparent;";
         igual1.setAttribute('style', parametrosiguallabel); //carga los estilos del label
-        igual1.innerHTML = "=";
+        igual1.innerHTML = "=";//
         igual.appendChild(igual1); //este inserta el display en el body del HTML 
         //console.log("el label igual esta cargada en el DOM " + igual1.isConnected); // retorna el estado del display en el DOM
         /*-----------------------------------------------------------------*/
