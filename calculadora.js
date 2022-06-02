@@ -925,7 +925,6 @@ function abre_calculadora() {
             "box-shadow: 5px 5px 10px -3px;" +
             "border-radius: 15px;";
         igual.setAttribute('style', parametrosigual); //carga los estilos del boton
-        //igual.innerHTML = '+';//carga el texto del boton
         igual.onclick = function () {
             if (digitos.value.length > 0 && permiso_res == true) {
                 //digitos.value = digitos.value + '=';//cargo el signo igual al display 
@@ -1038,6 +1037,176 @@ function abre_calculadora() {
         fondo.appendChild(ispc); //este inserta el label en el cuerpo de la calculadora 
         //console.log("el label division esta cargada en el DOM " + marca1.isConnected); 
         // retorna el estado del display en el DOM
+        /*-----------------------------------------------------------------*/
+        /* switch para detectar tecla presionada en la computadora */
+        /*-----------------------------------------------------------------*/
+        document.addEventListener('keydown', (event) => {
+            var keyValue = event.key;
+            switch (keyValue) {
+                case '1':
+                    console.log("1");
+                    if (permiso_tecla) {
+                        digitos.value += '1';
+                        num = num + '1';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '2':
+                    console.log("2");
+                    if (permiso_tecla) {
+                        digitos.value += '2';
+                        num = num + '2';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '3':
+                    console.log("3");
+                    if (permiso_tecla) {
+                        digitos.value += '3';
+                        num = num + '3';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '4':
+                    console.log("4");
+                    if (permiso_tecla) {
+                        digitos.value += '4';
+                        num = num + '4';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '5':
+                    console.log("5");
+                    if (permiso_tecla) {
+                        digitos.value += '5';
+                        num = num + '5';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '6':
+                    console.log("6");
+                    if (permiso_tecla) {
+                        digitos.value += '6';
+                        num = num + '6';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '7':
+                    console.log("7");
+                    if (permiso_tecla) {
+                        digitos.value += '7';
+                        num = num + '7';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '8':
+                    console.log("8");
+                    if (permiso_tecla) {
+                        digitos.value += '8';
+                        num = num + '8';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '9':
+                    console.log("9");
+                    if (permiso_tecla) {
+                        digitos.value += '9';
+                        num = num + '9';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case '0':
+                    console.log("0");
+                    if (permiso_tecla) {
+                        digitos.value += '0';
+                        num = num + '0';
+                        permiso_op = true;
+                        permiso_res = true;
+                    }
+                    break;
+                case 'Enter':
+                    console.log("Enter");
+                    if (digitos.value.length > 0 && permiso_res == true) {
+                        //digitos.value = digitos.value + '=';//cargo el signo igual al display 
+                        //console.log(num);
+                        let sol = eval(num);//realiza la operacion sobre el string num
+                        //console.log(sol);
+                        digitos.value = '';
+                        digitos.value = digitos.value + sol;//cargo el resultado al display
+                        let sol1 = String(sol); //convierto el resultado en string para poder compararlo con el display
+                        num = sol1;//cargo el resultado en la variable num para poder operar con el siguiente numero
+                        permiso_op = true;//permiso de operaciones
+                        permiso_tecla = false;//permiso de teclas
+                        permiso_res = false;//permiso de resultado
+                    }
+                    break;
+                case '+':
+                    console.log("+");
+                    if (digitos.value.length > 0 && permiso_op == true) {
+                        digitos.value = digitos.value + '+';
+                        num = num + '+';
+                        permiso_op = false;
+                        permiso_res = false;
+                        permiso_tecla = true;
+                    }
+                    break;
+                case '-':
+                    console.log("-");
+                    if (digitos.value.length > 0 && permiso_op == true) {
+                        digitos.value = digitos.value + '-';
+                        num = num + '-';
+                        permiso_op = false;
+                        permiso_res = false;
+                        permiso_tecla = true;
+                    }
+                    break;
+                case '*':
+                    console.log("*");
+                    if (digitos.value.length > 0 && permiso_op == true) {
+                        digitos.value = digitos.value + '*';
+                        num = num + '*';
+                        permiso_op = false;
+                        permiso_res = false;
+                        permiso_tecla = true;
+                    }
+                    break;
+                case '/':
+                    console.log("/");
+                    if (digitos.value.length > 0 && permiso_op == true) {
+                        digitos.value = digitos.value + '÷';
+                        num = num + '/';
+                        permiso_op = false;
+                        permiso_res = false;
+                        permiso_tecla = true;
+                    }   
+                    break;
+                case 'c':
+                    console.log("c");
+                    digitos.value = '';
+                    permiso_op = false;
+                    permiso_res = false;
+                    permiso_tecla = true;
+                    num = '';
+                    break;
+                case 'Backspace':
+                    console.log("Backspace");
+                    digitos.value = digitos.value.substring(0, digitos.value.length - 1);
+                    num = num.substring(0, num.length - 1);
+                    break;
+                default:
+                    console.log("tecla no permitida");
+                    break;
+            }
+          }, false);
     } catch (error) {
         alert("Error al cargar la calculadora " + error);
     }
