@@ -897,6 +897,8 @@ igual.onclick = function () {
     let sol = eval(num);
     //console.log(sol);
     digitos.value = digitos.value + sol;
+    let sol1 = String(sol);
+    num = sol1;
     permiso_op = true;
     permiso_tecla = false;
 }
