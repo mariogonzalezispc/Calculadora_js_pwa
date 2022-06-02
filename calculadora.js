@@ -1,6 +1,11 @@
+/* ISPC TSDWAD cohorte 2021 */
+/*Trabajo de practica alumnos Mario Gonzalez y Monica Antich 
+construccion de una calculadora funcional y responsive con 1 archivo de HTML 
+y 1 archivo de Javascript*/
+
 function abre_calculadora() {
     console.log("Hola calculadora de Mario y Monica ISPC TSDWAD 2022");
-    let num = '';
+    let num = '';//variable para guardar el numero que se va a ingresar
     let permiso_op = false; //permiso de operacion
     let permiso_tecla = true; //permiso de tecla
     let permiso_res = false; //permiso de resultado
